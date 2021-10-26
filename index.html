@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circum Navegação - Fernão de Magalhães</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Tangerine&display=swap" rel="stylesheet">
+
+    <!---favicon   ----->
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!---end of favicon----->
+</head>
+<body onload="beginTrip()">
+    <header>     
+        <div class="header"> 
+            <div class="header">Viajando por terras distantes: <br> um outro olhar sobre o universo patrimonial</div>
+            <button class="pop btn" id="intro" 
+            data-modal="intro-pop">?</button>
+        </div>
+
+    </header>
+    <div class="container">
+    <div class="world-map">
+            <button class="lisboa local fe-pulse-w-pause pop" id="lx"
+            data-modal="lx-pop" ><div class="label">Lisboa</div> </button>
+        
+            <!-- <button class="cabinda local" id="t2" 
+            data-modal="t2-pop"> <div class="label">Cabinda</div></button>
+               -->
+            <button class="kikongo local pop" id="t3" 
+            data-modal="t3-pop"> <div class="label ">Angola</div> </button>
+            
+            <button class="mozambique local fe-pulse-w-pause pop" id="t4" 
+            data-modal="t4-pop"> <div class="label ">Moçambique</div> </button>
+           
+            <button class="goa local pop" id="t5" 
+            data-modal="t5-pop"> <div class="label ">Goa</div> </button>
+         
+            <button class="stome local fe-pulse-w-pause pop" id="t6" 
+            data-modal="t6-pop"> <div class="label ">São Tomé <br>e Príncipe </div> </button>
+
+            <button class="timor local fe-pulse-w-pause pop" id="t7" 
+            data-modal="t7-pop"> <div class="label ">Timor <br>Lorosae </div> </button>
+
+            <button class="cabverde local fe-pulse-w-pause pop" id="t8" 
+            data-modal="t8-pop"> <div class="label ">Cabo Verde</div> </button>
+
+            <button class="argentina local fe-pulse-w-pause pop" id="t9" 
+            data-modal="t9-pop"> <div class="label ">Argentina</div> </button>
+
+            <button class="chile local pop" id="t10" 
+            data-modal="t10-pop"> <div class="label ">Chile</div> </button>
+
+            <button class="indonesia local fe-pulse-w-pause pop" id="t11" 
+            data-modal="t11-pop"> <div class="label ">Indonésia</div> </button>
+
+            <button class="quenia local pop" id="t12" 
+            data-modal="t12-pop"> <div class="label ">Quénia</div> </button>
+
+            <button class="nigeria local pop" id="t13" 
+            data-modal="t13-pop"> <div class="label ">Nigéria</div> </button>
+
+            <!-- <button class="serra_leoa local" id="t14" 
+            data-modal="t14-pop"> <div class="label ">Serra Leoa</div> </button> -->
+
+            <button class="benin local pop" id="t15" 
+            data-modal="t15-pop"> <div class="label ">Benin</div> </button>
+
+            <button class="brasil local  pop" id="t16" 
+            data-modal="t16-pop"> <div class="label ">Brasil</div> </button>
+
+            <button class="brasil2 local fe-pulse-w-pause pop" id="t162" 
+            data-modal="t162-pop"> <div class="label ">Brasil</div> </button>
+
+
+            <button class="catalunha local pop" id="t17" 
+            data-modal="t17-pop"> <div class="label ">Catalunha</div> </button>
+
+            <button class="miranda_do_douro local pop" id="t18" 
+            data-modal="t18-pop"> <div class="label ">Miranda do Douro</div> </button>
+
+            <button class="laponia local pop" id="t19" 
+            data-modal="t19-pop"> <div class="label ">Lapónia</div> </button>
+
+
+            <button class="nova_zelandia local pop" id="t20" 
+            data-modal="t20-pop"> <div class="label ">Nova Zelândia</div> </button>
+
+            <!-----modal contents------>
+
+
+            <div class="popup land" id="intro-pop">
+                <div class="vid">
+                    <span class="close"> &times;</span> 
+                    <h2>Segue a rota de Fernão de Magalhães</h2>   
+                        <video autoplay loop > 
+                        <source src="images/aip-demo.mov" >
+                        </video>   
+                </div>
+            </div>
+
+
+
+            <!-- <div class="popup" id="t2-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2></h2>
+                    <p><em>   Muana nkuvu i muana lumbumbu mveli ka pódi ntala nkandi ko: Ibila nvese bubatúla va mongo</em></p> 
+                    <p>Ao filho da tartaruga <br> e do lumbumbu <br>(grande caranguejo) <br> ninguém pode tirar a pele (esfolar) <br>  (porque é osso e o osso têm eles por cima)</p>
+                </div>
+            </div> -->
+
+            <div class="popup" id="lx-pop">
+                <div class="popup-content">
+                    
+                    <span class="close">&times;</span>
+                    <h2>Lisboa</h2>
+                    <p>Todas as grandes viagens <br> começam com um pequeno passo
+                    </p>
+                </div>
+            </div>
+     
+ 
+            <div class="popup" id="t3-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Angola</h2>
+                    <p><em>   Muana nkuvu i muana lumbumbu mveli ka pódi ntala nkandi ko: Ibila nvese bubatúla va mongo<br>
+                        <span class="dialect">(Kikongo)</span></em>
+                        <br>  Ao filho da tartaruga <br> 
+                        e do lumbumbu <br>(grande caranguejo) 
+                        <br> ninguém pode tirar a pele (esfolar) <br>  
+                        (porque é osso e o osso têm eles por cima)</p>
+                    <hr>
+                    <p> <em> Keto dya dingi ketuka<br>
+                        <span class="dialect">(Kikongo)</span></em> <br>
+                        A ambição extrema prejudica </p> 
+                    <hr>
+                    <p> <em>  Nsamu ambote ku mfoko<br>
+                        <span class="dialect">(Kikongo)</span></em> <br>
+                        A boa notícia é reputada boa apenas no fim </p>                    
+                </div>
+            </div>
+
+            <div class="popup" id="t4-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Moçambique</h2>
+                    <p> <em> Nambu wu tala hi magova.</em></p> 
+                    <p> O rio enche com os ribeiros.
+                        <br> (Os grandes rios fazem-se dos pequenos ribeiros; <br> 
+                        muitos poucos fazem um muito.)</p>
+                    
+
+                </div>
+            </div>
+
+            <div class="popup" id="t5-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Goa</h2>
+                    <p><em>Vӑmpta tӑsem pikta</em>
+                       <br> Como semeares, assim colherás</p>
+                       <hr>
+                        <p> <em>Mogan môg vaḍhta</em> <br>
+                            Amor com amor se paga</p>
+                            <hr>
+                        <p> <em> Xita vӑrvim bhatachi pӑrikxa</em> <br> 
+                            A árvore julga-se pelo seu fruto</p>
+                        
+                </div>
+            </div>
+
+            <div class="popup" id="t6-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>São Tomé e Príncipe</h2>
+                    <p><em>Ua vinté tan na ca batê fá  <br>
+                        <span class="dialect">(Criolo de S. Tomé e Príncipe)</span> 
+                        </em>
+                       <br> A união faz força</p>
+                       <hr>
+                        <p> <em>Téla non sá téla non. Semplé <br>
+                            <span class="dialect">(Criolo de S. Tomé e Príncipe)</span> </em> <br>
+                            A nossa terra é sempre a nossa terra</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t7-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                        <h2>Timor Lorosae</h2>
+                        <p><em>Inan aman rai ida oan ida <br>
+                            <span class="dialect">(Tétum)</span></em>
+                        <br> O sangue é mais espesso do que a água</p>
+                        <hr>
+                            <p> <em>Lia meti seren lia ué seren <br>
+                                <span class="dialect">(Tétum)</span> </em> <br>
+                                A verdade vem sempre à tona de água</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t8-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Cabo Verde</h2>
+                    <p><em>Fome câ tên lei <br>
+                        <span class="dialect">(Criolo de Cabo Verde)</span> </em>
+                       <br> Fome não tem lei</p>
+                       <hr>
+                        <p> <em>Amigo, amigo negocio â parte<br>
+                             <span class="dialect">(Criolo de Cabo Verde)</span> </em> <br>
+                            Amigos, amigos negócios à parte</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t9-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Argentina</h2>
+                    <p><em>A las três neblinas, llueve <br>
+                        <span class="dialect">(Espanhol)</span></em>
+                       <br>Passa a nuvem, fica a chuva</p>
+                       <hr>
+                        <p> <em>Cada chancho a su chiqueiro <br>
+                            <span class="dialect">(Espanhol)</span></em> <br>
+                            Cada qual em seu lugar</p>
+                        <hr>
+                        <p> <em>Si com caldo va sanando, sígale dando <br>
+                            <span class="dialect">(Criollo da Argentina)</span> </em> <br>
+                            Se o bem soa, o mal voa</p>
+                                <hr>
+                                <p> <em>Donde hubo fuego, cenizas quedan <br>
+                                    <span class="dialect">(Criollo da Argentina)</span> </em> <br>
+                                    Onde houve fogo, o fumo sai</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t10-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Chile</h2>
+                    <p><em>Mas es el ruido que las nueces<br>
+                        <span class="dialect">(Espanhol)</span></em>
+                       <br> São mais as vozes que as nozes</p>
+                       <hr>
+                        <p> <em>Unos se llevan la fama, i otros la lana<br>
+                            <span class="dialect">(Espanhol)</span></em> <br>
+                            Uns plantam, outros colhem</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t11-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Indonésia</h2>
+                    <p><em>Ada gula, ada semut<br>
+                        <span class="dialect">(Indonésio)</span></em>
+                       <br> Atrás do mel correm as abelhas </p>
+                       <hr>
+                        <p> <em>Kapal satu, nakhoda dua <br>
+                            <span class="dialect">(Indonésio)</span></em> <br>
+                            Panela de muita criada, ou insossa, ou salgada </p>
+                </div>
+            </div>
+
+            <div class="popup" id="t12-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Quénia</h2>
+                    <p><em>Damu nzito kuliko maji </em>
+                       <br>Longe da vista, perto do coração</p> 
+                       <hr>
+                        <p> <em>Bendera hufuata upepo</em> <br>
+                            Orienta-se a vela na direção do vento</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t13-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Nigéria</h2>
+                    <p><em>Igi kan ki da gbo sé </em>
+                       <br> Uma árvore não faz a floresta</p>
+                </div>
+            </div>
+            <!-- <div class="popup" id="t14-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <p><em>Bãbá do bãbà </em>
+                       <br> tradução em pt de 9.2</p>
+                </div>
+            </div> -->
+
+            <div class="popup" id="t15-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Benin</h2>
+                    <p><em>Àdo yì àtɔn nɔ flí zἔn ǎ  </em>
+                       <br> A união faz a força</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t16-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Brasil</h2>
+                    <p><em>A corda sempre quebra do lado mais fraco</em></p>
+                    <hr>
+                    <p><em>Além de queda, coice</em></p>
+                    <hr>
+                    <p><em>Palavras bonitas não enchem barriga</em></p>
+
+                </div>
+            </div>
+
+            <div class="popup" id="t162-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Brasil</h2>
+                    <p><em>Ko se eku, ko se aiye àjao <br>
+                        <span class="dialect">(Yorubá)</span></em> <br>
+                        o morcego nem é rato nem é pássaro</p>
+                        <hr>
+                    <p><em>Agbasa baba okuta <br>
+                        <span class="dialect">(Yorubá)</span></em><br>
+                    A rocha é o pai da pedra</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t17-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Catalunha</h2>
+                    <p><em>A cada cap hi há un món <br>
+                        <span class="dialect">(Catalão)</span></em>
+                       <br>Cada cabeça, sua sentença</p>
+                       <hr>
+                    <p><em>A tal cap, tal barret <br>
+                        <span class="dialect">(Catalão)</span></em>
+                    <br>Tal cabeça, tal sizo</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t18-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Miranda do Douro</h2>
+                    <p><em>A palabras loucas oureilhas moucas <br>
+                        <span class="dialect">(Mirandês)</span></em>
+                       <br>A palavras loucas, orelhas moucas</p>
+                       <hr>
+                    <p><em>Quien todo quier, todo perde <br>
+                        <span class="dialect">(Mirandês)</span></em>
+                    <br>Quem tudo quer tudo perde</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t19-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Lapónia</h2>
+                    <p><em>Áigi lea buoremus oahpahheaddji <br>
+                        <span class="dialect">(Suomi)</span></em>
+                       <br>O tempo ensina-nos</p>
+                       <hr>
+                    <p><em>Son dahká jogaid jávrin <br>
+                        <span class="dialect">(Suomi)</span></em>
+                    <br>Fazer de uma pulga um elefante</p>
+                </div>
+            </div>
+
+            <div class="popup" id="t20-pop">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Nova Zelândia</h2>
+                    <p><em>He pakaru ā waka e taea te raupine mai<br>
+                        <span class="dialect">(Maori)</span></em>
+                       <br>Pequenas cautelas evitam grandes males </p>
+                       <hr>
+                    <p><em>Mahia ngā mahi kei tamariki ana<br>
+                        <span class="dialect">(Maori)</span></em>
+                    <br>Tempo que passou, é passado </p>
+                </div>
+            </div>
+
+    </div>
+    
+
+    <footer>
+        <div class="footer">
+            <div class="logos">
+                <ul>
+                    <li> <img src="images/RP_DRCAlg.png" alt="drcalg" > </li>
+                    <li> <img src="images/DiVaM.png" alt="divam"> </li>
+                    <li> <img src="images/Logo_AIP-IAP+CUP-T.png" alt="aip"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
